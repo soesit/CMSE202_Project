@@ -1,6 +1,6 @@
 from tkinter import *
 import tkinter.messagebox
- 
+
 def gpa_calculator(grades):
     points = 0
     i = 0
@@ -14,7 +14,7 @@ def gpa_calculator(grades):
         return gpa
     else:
         return None
- 
+
 class App:
     def __init__(self, parent):
         self.parent = parent
@@ -45,8 +45,8 @@ class App:
             if sub.get() != "":
                 grades.append(sub.get())
         tkinter.messagebox.showinfo("Predicted CGPA ", str(gpa_calculator(grades)))
- 
- 
+
+
 root = Tk()
 app = App(root)
 root.mainloop()
